@@ -9,16 +9,16 @@ class Karaoke_bar
     @songs = [0001, 0002, 0003, 0004, 0005]
   end
 
-  # def add_room(name)
-  #   @rooms.push(room)
-  # end
-
   def check_guest_into_room(guest, room)
     room.push(guest)
   end
 
   def check_guest_out_of_room(guest, room)
     room.pop(guest)
+  end
+
+  def add_song_to_playlist(song, playlist)
+    playlist.push(song)
   end
 
   # def get_highest_song_id()

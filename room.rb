@@ -17,7 +17,11 @@ class Room
   end
 
   def add_guest_to_room(guest)
-    @guests.push(guest)
+    if get_number_of_guests_currently_in_room + 1 <= @capacity
+      @guests.push(guest)
+    else
+      return 'Sorry, the room is full!'
+    end
   end
 
   def remove_guest_from_room(guest)
@@ -28,13 +32,9 @@ class Room
     return @guests.count
   end
 
-
-  # def lend_book(book, customer)
-  #   #binding.pry
-  #   @books_in_stock.delete(book)
-  #   @books_on_loan.push(book)
-  #   customer.books.push(book)
-  #   book.on_loan_until_date = Date.today + loan_period
-  # end
+  def add_song_to_playlist(song)
+    @playlist.push(song)
+    p @playlist
+  end
 
 end
