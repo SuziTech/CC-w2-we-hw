@@ -1,7 +1,7 @@
 class Song
 
   attr_reader :id, :title, :artist, :genre
-  attr_accessor :song
+  #attr_accessor :id, :title, :artist, :genre
 
   def initialize(id, title, artist, genre)
     @id = id
@@ -10,16 +10,10 @@ class Song
     @genre = genre
   end
 
-  def add_song(id, title, artist,genre)
-
-  end
-
-  # def lend_book(book, customer)
-  #   #binding.pry
-  #   @books_in_stock.delete(book)
-  #   @books_on_loan.push(book)
-  #   customer.books.push(book)
-  #   book.on_loan_until_date = Date.today + loan_period
+  # def create_song(title, artist, genre)
+  #   new_song_id = @karaoke_bar.get_highest_song_id
+  #   @song + new_song_id = Song.new(new_song_id + 1, title, artist, genre)
+  #   @karaoke_bar.add_song_id_to_songs_array(new_song_id)
   # end
 
 end
