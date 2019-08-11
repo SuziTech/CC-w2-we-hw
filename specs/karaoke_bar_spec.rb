@@ -39,7 +39,6 @@ class TestKaraoke_bar < MiniTest::Test
     assert_equal(after_currently_in_room, currently_in_room + 1)
   end
 
-
   # def test_get_highest_song_id__no_songs
   #   assert_equal('No songs yet!', @karaoke_bar1.get_highest_song_id())
   # end
@@ -50,19 +49,6 @@ class TestKaraoke_bar < MiniTest::Test
 
   # def test_add_song_id_to_songs_array(new_song_id)
   #   assert_equal(@karaoke_bar1.get_highest_song_id + 1, new_song_id)
-  # end
-
-
-
-  # def test_library_can_add_book
-  #   @library.add_book(@book1)
-  #   @library.add_book(@book2)
-  #   assert_equal(2, @library.books_in_stock.count)
-  # end
-  #
-  # def test_try_to_borrow_book__successful
-  #   @customer1.try_to_borrow_book(@book1, @library)
-  #   assert_equal(1, @customer1.books.count)
   # end
 
 end

@@ -1,7 +1,6 @@
 class Song
 
   attr_reader :id, :title, :artist, :genre
-  #attr_accessor :id, :title, :artist, :genre
 
   def initialize(id, title, artist, genre)
     @id = id

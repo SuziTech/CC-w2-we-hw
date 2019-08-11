@@ -28,19 +28,4 @@ class TestGuest < MiniTest::Test
     assert_equal('John', @guest1.name)
   end
 
-  # def test_customer_starts_with_no_books
-  #   assert_equal([], @customer1.books)
-  # end
-  #
-  # def test_library_can_add_book
-  #   @library.add_book(@book1)
-  #   @library.add_book(@book2)
-  #   assert_equal(2, @library.books_in_stock.count)
-  # end
-  #
-  # def test_try_to_borrow_book__successful
-  #   @customer1.try_to_borrow_book(@book1, @library)
-  #   assert_equal(1, @customer1.books.count)
-  # end
-
 end

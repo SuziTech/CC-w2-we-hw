@@ -32,7 +32,7 @@ class TestRoom < MiniTest::Test
   #   assert_nil(@room1.guests, msg = nil)
   # end
 
-  def test_add_guest_to_room
+  def test_add_guest_to_room__ok
     @room1.add_guest_to_room(@guest2)
     assert_equal(1, @room1.guests.count)
   end
